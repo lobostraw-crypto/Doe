@@ -1,41 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOS Minas Gerais</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
 <!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
     <h1>SOS Enchentes em Minas Gerais</h1>
-    <p>Milhares de famílias perderam tudo. Sua doação salva vidas.</p>
+    <p>Chuvas históricas deixaram milhares de famílias sem nada. Sua ajuda é urgente.</p>
     <a href="#doacao" class="btn-primary">Doar agora</a>
   </div>
 </section>
 
-<!-- IMPACTO -->
+<!-- ATUALIZAÇÃO -->
+<section class="container">
+  <h2>Atualização — 27/02/2026 · 11:40</h2>
+  <p>
+    Minas Gerais enfrenta um <strong>cenário de emergência</strong> após chuvas históricas.
+    Segundo o Corpo de Bombeiros e a Defesa Civil, <strong>58 óbitos</strong> já foram confirmados
+    e <strong>mais de 4.200 pessoas estão desabrigadas</strong>.
+  </p>
+  <p>
+    As cidades de <strong>Juiz de Fora</strong> e <strong>Ubá</strong> estão entre as mais atingidas,
+    com bairros inteiros soterrados e rios transbordados.
+    Municípios como <strong>Matias Barbosa</strong> também sofrem impactos severos.
+  </p>
+</section>
+
+<!-- IMAGENS DE IMPACTO -->
 <section class="impacto">
   <h2>A realidade nas áreas atingidas</h2>
-
   <div class="impacto-grid">
-    <img src="./images/impacto1.jpg" alt="Enchente em Minas Gerais">
-    <img src="./images/impacto2.jpg" alt="Casas destruídas pelas chuvas">
+    <img src="./images/impacto1.jpg" alt="Rua tomada pela lama em Minas Gerais">
+    <img src="./images/impacto2.jpg" alt="Casas destruídas pelas chuvas em Minas Gerais">
   </div>
+</section>
 
+<!-- COMO AJUDA -->
+<section class="container destaque">
+  <h2>Como sua doação vira ajuda?</h2>
+  <ul class="lista-ajuda">
+    <li>Apoio logístico às equipes de resgate</li>
+    <li>Água potável, kits de higiene e limpeza</li>
+    <li>Cestas básicas e refeições prontas</li>
+    <li>Colchões, cobertores e roupas</li>
+    <li>Abrigos provisórios para pessoas e animais</li>
+  </ul>
+</section>
+
+<!-- POR QUE DOAR -->
+<section class="container">
+  <h2>Por que doar agora?</h2>
   <p>
-    Bairros inteiros foram tomados pela água e pela lama.
-    Famílias precisam de ajuda imediata.
+    Nas primeiras horas após uma tragédia, <strong>a velocidade salva vidas</strong>.
+    Com o solo instável e o risco contínuo, a necessidade de itens básicos cresce a cada dia.
   </p>
 </section>
 
 <!-- META -->
 <section class="meta-section">
-  <h2>Meta de Arrecadação</h2>
+  <h2>Meta de arrecadação</h2>
 
   <div class="valores-meta">
     <div>
@@ -55,20 +75,54 @@
   <p><strong>24%</strong> da meta atingida</p>
 </section>
 
-<!-- DOAÇÃO -->
+<!-- TRANSPARÊNCIA -->
+<section class="container">
+  <h2>Transparência</h2>
+  <ul>
+    <li>Atualizações frequentes com data e hora</li>
+    <li>Metas e marcos de arrecadação</li>
+    <li>Descrição da destinação dos recursos</li>
+    <li>Relatório consolidado ao final da campanha</li>
+  </ul>
+</section>
+
+<!-- ORGANIZAÇÕES -->
+<section class="container destaque">
+  <h2>Organizações parceiras</h2>
+
+  <h3>OIM — Organização Internacional para as Migrações</h3>
+  <p>
+    Agência da ONU dedicada à resposta humanitária, proteção de populações deslocadas
+    e apoio direto em crises humanitárias.
+  </p>
+
+  <h3>HUMUS</h3>
+  <p>
+    Organização brasileira especializada em gestão de desastres e resposta emergencial,
+    atuando com equipes técnicas e voluntários capacitados.
+  </p>
+
+  <h3>GRABH — Grupo de Resgate Animal de Belo Horizonte</h3>
+  <p>
+    Grupo técnico especializado em resgate e medicina veterinária de desastres,
+    atuando no salvamento de animais em áreas afetadas.
+  </p>
+</section>
+
+<!-- DOAÇÃO PIX -->
 <section id="doacao" class="pix-section">
   <h2>Doe agora com PIX</h2>
-  <p>Escolha um valor ou doe quanto puder</p>
+  <p>Escolha um valor ou doe qualquer quantia</p>
 
   <div class="pix-cards">
     <button class="pix-card" data-valor="5">R$ 5</button>
     <button class="pix-card" data-valor="10">R$ 10</button>
-    <button class="pix-card destaque ativo" data-valor="20">R$ 20</button>
+    <button class="pix-card ativo" data-valor="20">R$ 20</button>
     <button class="pix-card" data-valor="50">R$ 50</button>
     <button class="pix-card" data-valor="100">R$ 100</button>
   </div>
 
-  <input id="valor" type="number" value="20" min="1" />
+  <input id="valor" type="number" value="20" min="1">
 
   <button class="btn-gerar" onclick="gerarPix()">Gerar PIX</button>
 
@@ -77,11 +131,7 @@
   <textarea id="pix" readonly placeholder="Código PIX Copia e Cola"></textarea>
   <button class="btn-copiar" onclick="copiarPix()">Copiar PIX</button>
 
-  <img id="qrcode" />
+  <img id="qrcode">
 
   <small>Pagamento seguro • Sem cadastro • Ajuda imediata</small>
 </section>
-
-<script src="script.js"></script>
-</body>
-</html>
