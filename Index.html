@@ -116,31 +116,47 @@
 </section>
 
 <!-- DOAÇÃO PIX -->
-<section id="doacao" class="pix-section">
-  <h2>Doe agora com PIX</h2>
-  <p>Escolha um valor ou doe qualquer quantia</p>
+<section class="donation-options">
+  <h2>Escolha como ajudar agora</h2>
+  <p class="subtitle">
+    Cada valor faz diferença imediata para famílias afetadas pelas enchentes em Minas Gerais.
+  </p>
 
-  <button class="pix-card" data-valor="5">
-  R$ 5
-  <small>Ajuda com água potável</small>
-</button>
+  <div class="donation-cards">
 
-<button class="pix-card" data-valor="10">
-  R$ 10
-  <small>Kits de higiene</small>
-</button>
+    <div class="donation-card">
+      <h3>R$ 5</h3>
+      <p>Garante água potável para uma pessoa por um dia.</p>
+      <button onclick="startPayment(5)">Doar R$ 5</button>
+    </div>
 
-<button class="pix-card ativo" data-valor="20">
-  R$ 20
-  <small>Alimentação básica</small>
-</button>
+    <div class="donation-card">
+      <h3>R$ 10</h3>
+      <p>Ajuda com kits de higiene e limpeza emergencial.</p>
+      <button onclick="startPayment(10)">Doar R$ 10</button>
+    </div>
 
-<button class="pix-card" data-valor="50">
-  R$ 50
-  <small>Cobertores e colchões</small>
-</button>
+    <div class="donation-card destaque">
+      <h3>R$ 25</h3>
+      <p>Contribui com refeições prontas para famílias desabrigadas.</p>
+      <button onclick="startPayment(25)">Doar R$ 25</button>
+    </div>
 
-<button class="pix-card" data-valor="100">
-  R$ 100
-  <small>SOS MINAS GERAIS </small>
-</button>
+    <div class="donation-card">
+      <h3>R$ 50</h3>
+      <p>Ajuda na compra de colchões, cobertores e roupas emergenciais.</p>
+      <button onclick="startPayment(50)">Doar R$ 50</button>
+    </div>
+
+    <div class="donation-card">
+      <h3>R$ 100</h3>
+      <p>Fortalece a logística e o apoio direto às equipes de resgate.</p>
+      <button onclick="startPayment(100)">Doar R$ 100</button>
+    </div>
+
+  </div>
+
+  <p style="margin-top:30px; color:#aaa; font-size:14px;">
+    🔒 Pagamento 100% seguro via PIX • Doação imediata • Transparência total
+  </p>
+</section>
