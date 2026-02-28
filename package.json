@@ -1,0 +1,8 @@
+{
+  "name": "sos-minas-gerais",
+  "version": "1.0.0",
+  "description": "Campanha de doações SOS Minas Gerais",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
