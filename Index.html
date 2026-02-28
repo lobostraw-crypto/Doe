@@ -114,24 +114,27 @@
   <h2>Doe agora com PIX</h2>
   <p>Escolha um valor ou doe qualquer quantia</p>
 
-  <div class="pix-cards">
-    <button class="pix-card" data-valor="5">R$ 5</button>
-    <button class="pix-card" data-valor="10">R$ 10</button>
-    <button class="pix-card ativo" data-valor="20">R$ 20</button>
-    <button class="pix-card" data-valor="50">R$ 50</button>
-    <button class="pix-card" data-valor="100">R$ 100</button>
-  </div>
+  <button class="pix-card" data-valor="5">
+  R$ 5
+  <small>Ajuda com água potável</small>
+</button>
 
-  <input id="valor" type="number" value="20" min="1">
+<button class="pix-card" data-valor="10">
+  R$ 10
+  <small>Kits de higiene</small>
+</button>
 
-  <button class="btn-gerar" onclick="gerarPix()">Gerar PIX</button>
+<button class="pix-card ativo" data-valor="20">
+  R$ 20
+  <small>Alimentação básica</small>
+</button>
 
-  <div id="status"></div>
+<button class="pix-card" data-valor="50">
+  R$ 50
+  <small>Cobertores e colchões</small>
+</button>
 
-  <textarea id="pix" readonly placeholder="Código PIX Copia e Cola"></textarea>
-  <button class="btn-copiar" onclick="copiarPix()">Copiar PIX</button>
-
-  <img id="qrcode">
-
-  <small>Pagamento seguro • Sem cadastro • Ajuda imediata</small>
-</section>
+<button class="pix-card" data-valor="100">
+  R$ 100
+  <small>SOS MINAS GERAIS </small>
+</button>
