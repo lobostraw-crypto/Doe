@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOS Minas Gerais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>SOS Enchentes em Minas Gerais</h1>
+    <p>Milhares de famílias perderam tudo. Sua doação salva vidas.</p>
+    <a href="#doacao" class="btn-primary">Doar agora</a>
+  </div>
+</section>
+
+<!-- IMPACTO -->
+<section class="impacto">
+  <h2>A realidade nas áreas atingidas</h2>
+
+  <div class="impacto-grid">
+    <img src="./images/impacto1.jpg" alt="Enchente em Minas Gerais">
+    <img src="./images/impacto2.jpg" alt="Casas destruídas pelas chuvas">
+  </div>
+
+  <p>
+    Bairros inteiros foram tomados pela água e pela lama.
+    Famílias precisam de ajuda imediata.
+  </p>
+</section>
+
+<!-- META -->
+<section class="meta-section">
+  <h2>Meta de Arrecadação</h2>
+
+  <div class="valores-meta">
+    <div>
+      <strong>Arrecadado</strong>
+      <span>R$ 121.000</span>
+    </div>
+    <div>
+      <strong>Meta</strong>
+      <span>R$ 500.000</span>
+    </div>
+  </div>
+
+  <div class="barra-meta">
+    <div class="progresso"></div>
+  </div>
+
+  <p><strong>24%</strong> da meta atingida</p>
+</section>
+
+<!-- DOAÇÃO -->
+<section id="doacao" class="pix-section">
+  <h2>Doe agora com PIX</h2>
+  <p>Escolha um valor ou doe quanto puder</p>
+
+  <div class="pix-cards">
+    <button class="pix-card" data-valor="5">R$ 5</button>
+    <button class="pix-card" data-valor="10">R$ 10</button>
+    <button class="pix-card destaque ativo" data-valor="20">R$ 20</button>
+    <button class="pix-card" data-valor="50">R$ 50</button>
+    <button class="pix-card" data-valor="100">R$ 100</button>
+  </div>
+
+  <input id="valor" type="number" value="20" min="1" />
+
+  <button class="btn-gerar" onclick="gerarPix()">Gerar PIX</button>
+
+  <div id="status"></div>
+
+  <textarea id="pix" readonly placeholder="Código PIX Copia e Cola"></textarea>
+  <button class="btn-copiar" onclick="copiarPix()">Copiar PIX</button>
+
+  <img id="qrcode" />
+
+  <small>Pagamento seguro • Sem cadastro • Ajuda imediata</small>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
