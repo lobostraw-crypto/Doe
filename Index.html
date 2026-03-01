@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
+<section class="hero-image">
+  <img src="/images/enchente-topo.jpg" alt="Enchentes em Minas Gerais">
+  <div class="hero-overlay">
     <h1>SOS Enchentes em Minas Gerais</h1>
-    <p>Chuvas históricas deixaram milhares de famílias sem nada. Sua ajuda é urgente.</p>
-    <a href="#doacao" class="btn-primary">Doar agora</a>
+    <p>Sua doação salva vidas agora</p>
+    <button onclick="scrollToDonation()">Quero ajudar agora</button>
   </div>
 </section>
 
@@ -154,7 +154,18 @@
       <button onclick="startPayment(100)">Doar R$ 100</button>
     </div>
 
+  <div id="pixModal" class="pix-modal hidden">
+  <div class="pix-box">
+    <div class="loader"></div>
+    <p id="pixStatus">Gerando seu PIX, aguarde...</p>
+
+    <div id="pixResult" class="hidden">
+      <textarea id="pixCode" readonly></textarea>
+      <button onclick="copyPix()">Copiar código PIX</button>
+      <small>Após o pagamento, a confirmação é automática.</small>
+    </div>
   </div>
+</div>
 
   <p style="margin-top:30px; color:#aaa; font-size:14px;">
     🔒 Pagamento 100% seguro via PIX • Doação imediata • Transparência total
