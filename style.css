@@ -25,40 +25,52 @@ body {
 }
 
 /* HERO */
-.hero {
+.hero-image {
   position: relative;
-  min-height: 85vh;
-  background: url("./images/hero.jpg") center / cover no-repeat;
-  color: #fff;
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
 }
 
-.overlay {
+.hero-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover; /* isso REMOVE o zoom excessivo */
+  object-position: center;
+}
+
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  min-height: 85vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 16px;
+  color: #fff;
+  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 2.6rem;
-  max-width: 700px;
+.hero-overlay h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 16px 0 24px;
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-overlay button {
+  background: #00ff99;
+  color: #000;
+  border: none;
+  padding: 14px 26px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-primary {
